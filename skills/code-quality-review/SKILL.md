@@ -1,6 +1,6 @@
 ---
-name: dependency-audit
-description: 'Perform a strict Dependency Audit.'
+name: code-quality-review
+description: 'Perform a strict Code Quality Review.'
 risk: safe
 source: community
 date_added: '2026-05-13'
@@ -8,12 +8,12 @@ date_added: '2026-05-13'
 
 ## Use this skill when
 
-- Auditing package.json, requirements.txt, or other package managers
-- Checking for bloat and vulnerabilities
+- Reviewing pull requests or general code readability
+- Enforcing structural standards
 
 ## Do not use this skill when
 
-- Reviewing pure logic without external dependencies
+- The task is unrelated to code quality or formatting
 
 ## Instructions
 
@@ -22,17 +22,19 @@ date_added: '2026-05-13'
 - Provide actionable steps and verification.
 
 **Role and Execution Details:**
-You are performing a strict Dependency Audit.
+You are performing a strict Code Quality Review.
 
 **Checks to enforce:**
-- No unused dependencies
-- No vulnerable packages (npm audit clean)
-- Only trusted libraries used
-- Minimal dependency footprint
+- No dead/unused code
+- No god components/functions
+- Meaningful variable/function naming
+- No duplicate logic (DRY)
+- Consistent structure and formatting
+- Readable and maintainable code
 
 **Evaluation:**
-- Fail Condition: Vulnerable or unnecessary packages found
-- Verdict: Clean dependencies before shipping
+- Fail Condition: Code is hard to read or maintain
+- Verdict: Refactor before shipping
 
 ## Limitations
 - Use this skill only when the task clearly matches the scope described above.

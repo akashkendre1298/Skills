@@ -1,6 +1,6 @@
 ---
-name: dependency-audit
-description: 'Perform a strict Dependency Audit.'
+name: performance-review
+description: 'Perform a strict Performance Review.'
 risk: safe
 source: community
 date_added: '2026-05-13'
@@ -8,12 +8,12 @@ date_added: '2026-05-13'
 
 ## Use this skill when
 
-- Auditing package.json, requirements.txt, or other package managers
-- Checking for bloat and vulnerabilities
+- Auditing application speed, rendering, or API efficiency
+- Debugging memory leaks or slow loads
 
 ## Do not use this skill when
 
-- Reviewing pure logic without external dependencies
+- The task is unrelated to application performance
 
 ## Instructions
 
@@ -22,17 +22,18 @@ date_added: '2026-05-13'
 - Provide actionable steps and verification.
 
 **Role and Execution Details:**
-You are performing a strict Dependency Audit.
+You are performing a strict Performance Review.
 
 **Checks to enforce:**
-- No unused dependencies
-- No vulnerable packages (npm audit clean)
-- Only trusted libraries used
-- Minimal dependency footprint
+- No unnecessary re-renders
+- Optimized API calls (no duplicates)
+- Lazy loading where needed
+- Assets optimized (images, bundles)
+- No blocking operations on load
 
 **Evaluation:**
-- Fail Condition: Vulnerable or unnecessary packages found
-- Verdict: Clean dependencies before shipping
+- Fail Condition: App feels slow or inefficient
+- Verdict: Optimize before shipping
 
 ## Limitations
 - Use this skill only when the task clearly matches the scope described above.

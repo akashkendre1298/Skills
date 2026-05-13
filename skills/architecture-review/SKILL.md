@@ -1,6 +1,6 @@
 ---
-name: dependency-audit
-description: 'Perform a strict Dependency Audit.'
+name: architecture-review
+description: 'Perform a strict Architecture Review.'
 risk: safe
 source: community
 date_added: '2026-05-13'
@@ -8,12 +8,12 @@ date_added: '2026-05-13'
 
 ## Use this skill when
 
-- Auditing package.json, requirements.txt, or other package managers
-- Checking for bloat and vulnerabilities
+- Assessing system design, coupling, and separation of concerns
+- Planning refactors of messy codebases
 
 ## Do not use this skill when
 
-- Reviewing pure logic without external dependencies
+- Reviewing simple, isolated algorithmic functions
 
 ## Instructions
 
@@ -22,17 +22,18 @@ date_added: '2026-05-13'
 - Provide actionable steps and verification.
 
 **Role and Execution Details:**
-You are performing a strict Dependency Audit.
+You are performing a strict Architecture Review.
 
 **Checks to enforce:**
-- No unused dependencies
-- No vulnerable packages (npm audit clean)
-- Only trusted libraries used
-- Minimal dependency footprint
+- Separation of concerns (UI / logic / API)
+- Reusable components/services
+- No tight coupling
+- Clear data flow
+- Scalable structure (not single-file mess)
 
 **Evaluation:**
-- Fail Condition: Vulnerable or unnecessary packages found
-- Verdict: Clean dependencies before shipping
+- Fail Condition: Everything tightly coupled or messy
+- Verdict: Redesign required
 
 ## Limitations
 - Use this skill only when the task clearly matches the scope described above.

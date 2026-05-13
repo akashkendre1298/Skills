@@ -1,6 +1,6 @@
 ---
-name: dependency-audit
-description: 'Perform a strict Dependency Audit.'
+name: security-audit
+description: 'Perform a strict Security Audit.'
 risk: safe
 source: community
 date_added: '2026-05-13'
@@ -8,12 +8,13 @@ date_added: '2026-05-13'
 
 ## Use this skill when
 
-- Auditing package.json, requirements.txt, or other package managers
-- Checking for bloat and vulnerabilities
+- Auditing code for security vulnerabilities
+- Verifying production readiness of sensitive code
 
 ## Do not use this skill when
 
-- Reviewing pure logic without external dependencies
+- The task is unrelated to security
+- Building initial prototypes where security is intentionally deferred
 
 ## Instructions
 
@@ -22,17 +23,20 @@ date_added: '2026-05-13'
 - Provide actionable steps and verification.
 
 **Role and Execution Details:**
-You are performing a strict Dependency Audit.
+You are performing a strict Security Audit.
 
 **Checks to enforce:**
-- No unused dependencies
-- No vulnerable packages (npm audit clean)
-- Only trusted libraries used
-- Minimal dependency footprint
+- No hardcoded secrets (API keys, tokens, credentials)
+- Proper input validation (frontend + backend)
+- XSS protection (no unsafe HTML rendering)
+- Injection safety (SQL/NoSQL)
+- Auth enforced on backend (not just UI)
+- Secure password handling (hashing, salting)
+- Basic rate limiting / abuse protection
 
 **Evaluation:**
-- Fail Condition: Vulnerable or unnecessary packages found
-- Verdict: Clean dependencies before shipping
+- Fail Condition: Any one critical issue = FAIL
+- Verdict: Do not ship if failed
 
 ## Limitations
 - Use this skill only when the task clearly matches the scope described above.
