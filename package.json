@@ -1,6 +1,6 @@
 {
   "name": "@akashkendre/devskills",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "DevSkill Studio — Professional SDLC Toolkit for AI-Powered Engineering",
   "main": "index.js",
   "bin": {
@@ -17,6 +17,10 @@
     "skills",
     "cli"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Akash Kendre",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashkendre1298/Skills.git"
+  }
 }
