@@ -1,8 +1,8 @@
-# 🚀 DevSkill Studio: Professional SDLC Toolkit
+#  DevSkill Studio: Professional SDLC Toolkit
 
 A highly curated, industry-standard collection of **25 core engineering skills** and **4 Super Personas** designed to turn your AI assistant (Cursor, VS Code Copilot, Claude Code) into a Lead Engineer.
 
-## 🚀 Quick Start
+##  Quick Start
 
 Install globally to access the library from any project:
 
@@ -14,7 +14,7 @@ npm install -g @akashkendre/devskills
 
 ---
 
-## 🛠️ The Persona-Driven Workflow
+##  The Persona-Driven Workflow
 
 Instead of memorizing dozens of individual commands, DevSkill Studio uses **Super Personas** that automatically enforce strict industry standards behind the scenes.
 
@@ -52,7 +52,7 @@ Automatically enforces:
 
 ---
 
-## 📖 Individual Core Skills
+##  Individual Core Skills
 
 If you need surgical precision, you can still call any of the 25 highly-optimized core skills directly (e.g., `/api-design`, `/dockerfile-gen`, `/perf-budget`).
 
@@ -63,7 +63,7 @@ devskills list
 
 ---
 
-## 🛤️ Recommended SDLC Workflow (The "Golden Path")
+##  Recommended SDLC Workflow (The "Golden Path")
 
 When building an application from scratch or auditing an existing one, follow this sequence of skills to ensure rigorous quality at every step of the Software Development Life Cycle:
 
@@ -110,5 +110,5 @@ When building an application from scratch or auditing an existing one, follow th
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Contributions are welcome! Please submit a Pull Request for any changes.
