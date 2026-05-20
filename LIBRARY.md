@@ -696,7 +696,6 @@ Formatting Rules :-
 /prompt-logger [paste prompt for logging every user input]
 ```
 
----
 
 
 ---
